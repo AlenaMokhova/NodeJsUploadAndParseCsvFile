@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Parse file</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Parse file and read it</h1>
+            <p>Load CSV file into form below and click "Load file" button.</p>
+            <p>Files will be saved in <code>upload</code> folder in that project. Then will be initialized parsing of loaded files and display content as table.</p>
+            <form id='form'>
+                <div class="input-group">
+                    <label for='files'>Select CSV file</label>
+                    <input id='files' name='files' type='file' accept=".csv">
+                </div>
+                <button class="submit-btn" type='submit'>Upload</button>
+            </form>
+            <div id="status-file-loading"></div>
+            <div id="status-file-parsing"></div>
+            <div id="parse-result"></div>
+        </div>
+        <script src='./script.js'></script>
+    </body>
+</body>
